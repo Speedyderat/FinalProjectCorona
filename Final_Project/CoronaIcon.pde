@@ -2,15 +2,17 @@
 
 class CoronaIcon {
 
-  float x, y, speed;
+  float x, y, speed, xPos, yPos;
   PImage coronaIcon;
 
 
   CoronaIcon() {
     coronaIcon = loadImage("img/corona.png");
+    xPos = random(50, 900);
+    yPos = random(50, 650);
   }
   
   void display() {
-    image(coronaIcon, random(50, 900), random(50, 650), 100, 100);
+    image(coronaIcon, xPos, yPos, 100, 100);
   }
 }
