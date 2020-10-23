@@ -14,7 +14,7 @@ class CoronaIcon {
     xspeed = random(0.5, 3);
     yspeed = random(0.5, 3);
     rotation = 0;
-    rotationSpeed = 0.01;
+    rotationSpeed = (xspeed*yspeed/2)/100;
   }
 
   void display() {
@@ -27,7 +27,7 @@ class CoronaIcon {
     }
     if (yPos > height-115 || yPos < 115) {
       yDirection *= -1;
-      rotationSpeed *= -1;
+      rotationSpeed *= 1.01;
     }
     pushMatrix();
     imageMode(CENTER);
