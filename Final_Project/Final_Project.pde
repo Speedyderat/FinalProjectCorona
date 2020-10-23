@@ -5,6 +5,7 @@
 
 startscreen startscreen;
 scene1 scene1;
+scene2 scene2;
 Player P1;
 Energy E;
 NPC npc;
@@ -17,6 +18,7 @@ void setup() {
 
   startscreen = new startscreen();
   scene1 = new scene1();
+  scene2 = new scene2();
   P1 = new Player();
   E = new Energy();
   npc = new NPC();
@@ -31,7 +33,7 @@ void draw() {
   if (stage == 1) {
     startscreen.display();
     if (keyPressed) {
-      stage = stage +1;
+      stage = stage + 1;
     }
   } 
 
@@ -42,7 +44,25 @@ void draw() {
     //Player
     P1.display();
     P1.move1();
+
+    //NPC
+    npc.display();
+
+    //Energy
+    E.display();
+
+    if (x >= width) {
+      stage = stage + 1;
+    }
+  }
+  
+  if (stage == 3) {
+    scene2.display();
     
+    //Player
+    P1.display();
+    P1.move1();
+
     //NPC
     npc.display();
 

@@ -1,8 +1,9 @@
 //Player
+  float x;
 
 class Player {
 
-  float x;
+  
   float y;
   float speed;
   color bodyColor;
@@ -58,7 +59,7 @@ class Player {
      
     if (keys ['a'] && x > 15)
       x = x - speed;
-    if (keys ['d'] && x < width-15)
+    if (keys ['d'] && x <= width)
       x = x + speed;
     if (keys ['w'] && y > 160)
       y = y - speed;
