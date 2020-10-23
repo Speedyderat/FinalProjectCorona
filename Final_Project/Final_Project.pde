@@ -7,6 +7,7 @@ startscreen startscreen;
 scene1 scene1;
 Player P1;
 Energy E;
+NPC npc;
 
 int stage;
 
@@ -18,6 +19,7 @@ void setup() {
   scene1 = new scene1();
   P1 = new Player();
   E = new Energy();
+  npc = new NPC();
 
   stage = 1;
 }
@@ -38,7 +40,11 @@ void draw() {
     scene1.display();
 
     //Player
-    P1.display(E.charge());
+    P1.display();
+    P1.move1();
+    
+    //NPC
+    npc.display();
 
     //Energy
     E.display();
