@@ -106,6 +106,23 @@ class Player {
     }
   }
 
+  void move3() {
+
+    if (keys ['a'] && x >= 0)
+      x = x - speed;
+    if (keys ['d'] && x <= width - 15)
+      x = x + speed;
+    if (keys ['w'] && y > 180)
+      y = y - speed;
+    if (keys ['s'] && y <= height - 70)
+      y = y + speed;
+    if (keys [' ']) {
+      speed = 2;
+    } else {
+      speed = 1;
+    }
+  }
+
 
   void walkPressed() {
     keys[key] = true;

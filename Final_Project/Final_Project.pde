@@ -85,7 +85,7 @@ void draw() {
       x = width - 3;
     }
 
-    if (x > height - 1) {
+    if (x > width - 1) {
       stage = stage + 1;
       x = 3;
     }
@@ -101,7 +101,7 @@ void draw() {
 
     //Player
     P1.display();
-    P1.move2();
+    P1.move3();
 
     //Energy
     E.display();
