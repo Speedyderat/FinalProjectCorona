@@ -9,8 +9,8 @@ class CoronaIcon {
 
   CoronaIcon() {
     coronaIcon = loadImage("img/corona.png");
-    xPos = random(50, 900);
-    yPos = random(50, 650);
+    xPos = random(60, 900);
+    yPos = random(150, 600);
     xspeed = random(0.5, 3);
     yspeed = random(0.5, 3);
     rotation = 0;
