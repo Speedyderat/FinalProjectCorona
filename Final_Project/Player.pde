@@ -63,7 +63,24 @@ class Player {
       x = x + speed;
     if (keys ['w'] && y > 160)
       y = y - speed;
-    if (keys ['s'] && y < height-40)
+    if (keys ['s'] && y < height-70)
+      y = y + speed;
+    if (keys [' ']){
+        speed = 2;
+    } else {
+      speed = 1;
+    }
+  }
+  
+    void move2() {
+     
+    if (keys ['a'] && x >= 0)
+      x = x - speed;
+    if (keys ['d'] && x <= width)
+      x = x + speed;
+    if (keys ['w'] && y > 160)
+      y = y - speed;
+    if (keys ['s'] && y <= height)
       y = y + speed;
     if (keys [' ']){
         speed = 2;

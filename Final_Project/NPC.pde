@@ -10,8 +10,8 @@ class NPC {
   NPC() {
     rectMode(CENTER);
 
-    x = random(160, 950);
-    y = random(50, 700);
+    x = random(20, 980);
+    y = random(160, 730);
     speed = 1;
 
     bodyColor = color(255, 255, 0);

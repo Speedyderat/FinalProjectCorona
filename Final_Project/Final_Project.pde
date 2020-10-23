@@ -40,35 +40,40 @@ void draw() {
   //Second Stage - The Game
   if (stage == 2) {  
     scene1.display();
+    
+    //NPC
+    npc.display();
 
     //Player
     P1.display();
     P1.move1();
 
-    //NPC
-    npc.display();
-
     //Energy
     E.display();
 
-    if (x >= width) {
+    if (x == width - 1) {
       stage = stage + 1;
       x = 1;
     }
   }
-  
+
   if (stage == 3) {
     scene2.display();
-    
-    //Player
-    P1.display();
-    P1.move1();
 
     //NPC
     npc.display();
 
+    //Player
+    P1.display();
+    P1.move2();
+
     //Energy
     E.display();
+
+    if (x <= 1) {
+      stage = stage - 1;
+      x = width - 1;
+    }
   }
 }
 
