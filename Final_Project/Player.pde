@@ -67,27 +67,27 @@ class Player {
       L = L + (legSpeed * updown);
       if (L == 5 || L == -5) {
         updown *= -1;
-    }}
-    else
+      }
+    } else
       L = 0;
   }
 
-    void move1() {
+  void move1() {
 
-      if (keys ['a'] && x > 15)
-        x = x - speed;
-      if (keys ['d'] && x <= width)
-        x = x + speed;
-      if (keys ['w'] && y > 160)
-        y = y - speed;
-      if (keys ['s'] && y < height-70)
-        y = y + speed;
-      if (keys [' ']) {
-        speed = 2;
-      } else {
-        speed = 1;
-      }
+    if (keys ['a'] && x > 15)
+      x = x - speed;
+    if (keys ['d'] && x <= width)
+      x = x + speed;
+    if (keys ['w'] && y > 160)
+      y = y - speed;
+    if (keys ['s'] && y < height-70)
+      y = y + speed;
+    if (keys [' ']) {
+      speed = 2;
+    } else {
+      speed = 1;
     }
+  }
 
   void move2() {
 

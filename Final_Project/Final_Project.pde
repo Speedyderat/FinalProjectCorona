@@ -3,14 +3,15 @@
  Jasper Bosschart (sXXXXXXX)
  Stefan Kooy      (s2614588)  */
 
+int stage;
+int npccount = 8;
+
 startscreen startscreen;
 scene1 scene1;
 scene2 scene2;
 Player P1;
 Energy E;
-NPC npc;
-
-int stage;
+NPC [] npcs = new NPC[npccount];
 
 
 void setup() {
@@ -21,9 +22,12 @@ void setup() {
   scene2 = new scene2();
   P1 = new Player();
   E = new Energy();
-  npc = new NPC();
 
-  stage = 1;
+  for (int i=0; i<npccount; i++) {
+    npcs[i] = new NPC();
+
+    stage = 1;
+  }
 }
 
 
@@ -40,9 +44,11 @@ void draw() {
   //Second Stage - The Game
   if (stage == 2) {  
     scene1.display();
-    
+
     //NPC
-    npc.display();
+    for (int i=0; i<npccount; i++) {
+      npcs[i].display();
+    }
 
     //Player
     P1.display();
@@ -61,7 +67,9 @@ void draw() {
     scene2.display();
 
     //NPC
-    npc.display();
+    for (int i=0; i<npccount; i++) {
+      npcs[i].display();
+    }
 
     //Player
     P1.display();

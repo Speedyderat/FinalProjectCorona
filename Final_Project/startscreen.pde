@@ -3,13 +3,13 @@
 class startscreen {
   PImage startscreenbackground;
   PImage startscreentext;
-  
+
   CoronaIcon icon;
 
   startscreen() {
     startscreenbackground = loadImage("img/startscreenbackground.png");
     startscreentext = loadImage("img/startscreentext.png");
-    
+
     icon = new CoronaIcon();
   }
 

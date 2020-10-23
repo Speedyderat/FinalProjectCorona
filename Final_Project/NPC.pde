@@ -1,28 +1,39 @@
 
 
 class NPC {
-  
+
   float x;
   float y;
   float speed;
+  float L;
+  float updown;
+  float legSpeed;
+  float directionX;
+  float directionY;
   color bodyColor;
-  
+
   NPC() {
     rectMode(CENTER);
 
     x = random(20, 980);
     y = random(160, 730);
-    speed = 1;
+    speed = random(0.75, 1);
+    L = 0;
+    updown = 1;
+    legSpeed = 0.35;
+    directionX = random( 1, -1);
+    directionY = random( 1, -1);
 
     bodyColor = color(255, 255, 0);
   }
 
 
   void display() {
+    walking();
     noStroke();
     fill(bodyColor);
 
-    //NPC
+    //player
 
     //body
     rect(x, y, 30, 50);
@@ -41,13 +52,30 @@ class NPC {
     arc(x+20, y+11, 8, 10, 0, PI);
 
     //left leg
-    arc(x-10, y+35, 10, 10, PI, 2*PI);
-    rect(x-10, y+40, 10, 30);
-    arc(x-10, y+55, 10, 10, 0, PI);
+    arc(x-10, y+(35 + L), 10, 10, PI, 2*PI);
+    rect(x-10, y+(35 + L), 10, 40);
+    arc(x-10, y+(55 + L), 10, 10, 0, PI);
 
     //right leg
-    arc(x+10, y+35, 10, 10, PI, 2*PI);
-    rect(x+10, y+40, 10, 30);
-    arc(x+10, y+55, 10, 10, 0, PI);
+    arc(x+10, y+(35 - L), 10, 10, PI, 2*PI);
+    rect(x+10, y+(35 - L), 10, 40);
+    arc(x+10, y+(55 - L), 10, 10, 0, PI);
+  }
+
+  void walking() {
+
+    x = x + (speed * directionX);
+    y = y + (speed * directionY);
+    if (x > width - 20 || x < 20) {
+      directionX *= -1;
+    }
+    if (y > height - 60 || y < 160) {
+      directionY *= -1;
+    }
+
+    L = L + (legSpeed * updown);
+    if (L >= 5 || L <= -5) {
+      updown *= -1;
+    }
   }
 }
