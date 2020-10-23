@@ -53,6 +53,7 @@ void draw() {
 
     if (x >= width) {
       stage = stage + 1;
+      x = 1;
     }
   }
   
