@@ -51,9 +51,9 @@ void draw() {
     //Energy
     E.display();
 
-    if (x == width - 1) {
+    if (x >= width - 1) {
       stage = stage + 1;
-      x = 1;
+      x = 3;
     }
   }
 
@@ -72,7 +72,7 @@ void draw() {
 
     if (x <= 1) {
       stage = stage - 1;
-      x = width - 1;
+      x = width - 3;
     }
   }
 }
