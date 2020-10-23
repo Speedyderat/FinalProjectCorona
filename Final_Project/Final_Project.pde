@@ -4,6 +4,7 @@
  Stefan Kooy      (s2614588)  */
 
 startscreen startscreen;
+scene1 scene1;
 Player P1;
 Energy E;
 
@@ -14,6 +15,7 @@ void setup() {
   size(1000, 750);
 
   startscreen = new startscreen();
+  scene1 = new scene1();
   P1 = new Player();
   E = new Energy();
 
@@ -33,7 +35,7 @@ void draw() {
 
   //Second Stage - The Game
   if (stage == 2) {  
-    background(255);
+    scene1.display();
 
     //Player
     P1.display(E.charge());

@@ -1,5 +1,4 @@
-//start screen is an image created in photoshop.
-//it is loaded with the right dimensions 
+//Startscreen is an image created in photoshop.
 
 class startscreen {
   PImage startscreenbackground;
