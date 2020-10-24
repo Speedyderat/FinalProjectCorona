@@ -10,7 +10,7 @@ class NPC {
   NPC() {
     rectMode(CENTER);
 
-    x = random(20, 980);
+    x = random(30, 980);
     y = random(160, 730);
     speed = random(0.75, 1);
     L = 0;
