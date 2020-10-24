@@ -116,11 +116,12 @@ class Player {
       y = y + speed;
     if (keys [' ']) {
       speed = 2;
-    } else {
+    } 
+    else {
       speed = 1;
     }
   }
-  
+
 
   float posX() {
     return x;

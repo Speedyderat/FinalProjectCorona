@@ -6,12 +6,11 @@ class Energy {
 
   float energy, drain, charge;
 
-  boolean exhausted;
   boolean [] keys = new boolean[1000000];    //makes an array for more possible keys (the maximum)
 
   Energy() {
     energy = 197;
-    drain = 1.5;
+    drain = 1;
     charge = 0.1;
   }
 
@@ -51,21 +50,11 @@ class Energy {
     rectMode(CENTER);
   }
 
-  boolean charge() {
+  void charge() {
     if (energy <= 197) {          //refills the energybar to max energy
       energy = energy + charge;
     }
-
-    if (energy == 0) {
-      exhausted = true;
-    }
-
-    if (energy == 50) {
-      exhausted = false;
-    }
-    return exhausted;
   }
-
 
   void drain() {
     if (keys [' '] && (keys ['a'] || keys ['s'] || keys ['d'] || keys ['w'])) {
