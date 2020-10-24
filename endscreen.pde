@@ -5,20 +5,20 @@
 class Endscreen {
   
   PImage endscreenbackground;
-//  PImage endscreentext;
+  PImage endscreengameover;
 
   CoronaIcon icon;
 
   Endscreen() {
     endscreenbackground = loadImage("data/img/startscreenbackground.png");
-//    endscreentext = loadImage("data/img/endscreentext.png");
+    endscreengameover = loadImage("data/img/endscreengameover.png");
 
     icon = new CoronaIcon();
   }
 
-  void infected() {
+  void gameover() {
     image(endscreenbackground, 0, 0, 1000, 750);
     icon.display();
-//    image(endscreentext, 0, 0, 1000, 750);
+    image(endscreengameover, 0, 0, 1000, 750);
   }
 }

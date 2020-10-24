@@ -131,7 +131,7 @@ void draw() {
   
   //Third Stage - Endscreen
   if (stage == gameover) {
-    endscreen.infected();
+    endscreen.gameover();
   }
 }
 
