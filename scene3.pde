@@ -1,9 +1,9 @@
 /* 
  Scene 3 is an image created in photoshop.
  */
- 
+
 class Scene3 {
-  
+
   PImage scene3;
 
   Scene3() {

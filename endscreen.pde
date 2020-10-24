@@ -1,9 +1,9 @@
 /* 
  Startscreen is an image created in photoshop.
  */
- 
+
 class Endscreen {
-  
+
   PImage endscreenbackground;
   PImage endscreengameover;
 

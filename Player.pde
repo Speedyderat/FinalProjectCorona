@@ -116,8 +116,7 @@ class Player {
       y = y + speed;
     if (keys [' ']) {
       speed = 2;
-    } 
-    else {
+    } else {
       speed = 1;
     }
   }
@@ -130,6 +129,7 @@ class Player {
   float posY() {
     return y;
   }
+
 
 
   void walkPressed() {

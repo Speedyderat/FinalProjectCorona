@@ -1,9 +1,9 @@
 /* 
  Startscreen is an image created in photoshop.
  */
- 
+
 class Startscreen {
-  
+
   PImage startscreenbackground;
   PImage startscreentext;
 

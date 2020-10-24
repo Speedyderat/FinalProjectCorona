@@ -3,7 +3,7 @@
  */
 
 class Scene1 {
-  
+
   PImage scene1;
 
   Scene1() {

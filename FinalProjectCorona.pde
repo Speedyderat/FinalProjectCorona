@@ -128,7 +128,7 @@ void draw() {
       x = width - 3;
     }
   }
-  
+
   //Third Stage - Endscreen
   if (stage == gameover) {
     endscreen.gameover();
