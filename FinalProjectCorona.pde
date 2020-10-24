@@ -5,7 +5,7 @@
  Stefan Kooy      (s2614588)  
  */
 
-int stage, gameover;
+int stage, gameover, youwon;
 int npccount = 5;
 float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
@@ -45,6 +45,7 @@ void setup() {
 
   stage = 1;
   gameover = 13;
+  youwon = 100;
 }
 
 
@@ -97,7 +98,7 @@ void draw() {
     //Energy
     E.display();
 
-    if (scene2.posterClickres()) {
+    if (scene2.posterClickres()) {        //poster displays in full size in stage 25
       stage = stage + 22;
     }
 

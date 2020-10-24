@@ -7,7 +7,7 @@ class Player {
   float y, speed, L, updown, legSpeed;
   color bodyColor;
 
-  boolean [] keys = new boolean[1000000];    //makes an array for 128 possible keys (the maximum)
+  boolean [] keys = new boolean[1000000];    //makes an array for more possible keys at the same time
 
   Player() {
     rectMode(CENTER);
@@ -128,6 +128,14 @@ class Player {
 
   float posY() {
     return y;
+  }
+  
+  float pSlow() {
+    return speed = 1;
+  }
+  
+  float pFast() {
+    return speed = 2;
   }
 
 

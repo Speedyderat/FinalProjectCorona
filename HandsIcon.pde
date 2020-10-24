@@ -1,16 +1,16 @@
 /* 
- This is a class created for the corona virus going around on the starting screen (image was free to use).
+ This is a class created for the clean hands icon going around on the endscreen (image was free to use).
  */
 
-class CoronaIcon {
+class HandsIcon {
 
   float xPos, yPos, xspeed, yspeed, rotation, rotationSpeed;
-  PImage coronaIcon;
+  PImage handsIcon;
   int xDirection = 1, yDirection = 1;
 
 
-  CoronaIcon() {
-    coronaIcon = loadImage("data/img/corona.png");
+  HandsIcon() {
+    handsIcon = loadImage("data/img/hands.png");
     xPos = random(60, 900);
     yPos = random(150, 600);
     xspeed = random(0.5, 3);
@@ -35,7 +35,7 @@ class CoronaIcon {
     imageMode(CENTER);
     translate(xPos, yPos);
     rotate(rotation);
-    image(coronaIcon, 0, 0, 100, 100);
+    image(handsIcon, 0, 0, 100, 100);
     imageMode(CORNER);
     popMatrix();
   }
