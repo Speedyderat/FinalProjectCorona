@@ -2,7 +2,7 @@
  Scene 2 is an image created in photoshop.
  */
 
-class scene2 {
+class Scene2 {
   
   PImage scene2;
 

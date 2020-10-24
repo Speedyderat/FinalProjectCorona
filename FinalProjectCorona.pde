@@ -9,9 +9,9 @@ int stage;
 int npccount = 8;
 float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
-scene1 scene1;
-scene2 scene2;
-scene3 scene3;
+Scene1 scene1;
+Scene2 scene2;
+Scene3 scene3;
 Player P1;
 Energy E;
 NPC [] npcs = new NPC[npccount];
@@ -21,9 +21,9 @@ void setup() {
   size(1000, 750);
 
   startscreen = new Startscreen();
-  scene1 = new scene1();
-  scene2 = new scene2();
-  scene3 = new scene3();
+  scene1 = new Scene1();
+  scene2 = new Scene2();
+  scene3 = new Scene3();
   P1 = new Player();
   E = new Energy();
 
