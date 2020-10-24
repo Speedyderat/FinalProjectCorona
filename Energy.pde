@@ -4,9 +4,7 @@
 
 class Energy {
 
-  float energy;
-  float drain;
-  float charge;
+  float energy, drain, charge;
 
   boolean exhausted;
   boolean [] keys = new boolean[1000000];    //makes an array for more possible keys (the maximum)

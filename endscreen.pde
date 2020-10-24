@@ -3,14 +3,15 @@
  */
  
 class Endscreen {
+  
   PImage endscreenbackground;
-  PImage endscreentext;
+//  PImage endscreentext;
 
   CoronaIcon icon;
 
   Endscreen() {
     endscreenbackground = loadImage("data/img/startscreenbackground.png");
-    endscreentext = loadImage("data/img/startscreentext.png");
+//    endscreentext = loadImage("data/img/endscreentext.png");
 
     icon = new CoronaIcon();
   }
@@ -18,6 +19,6 @@ class Endscreen {
   void infected() {
     image(endscreenbackground, 0, 0, 1000, 750);
     icon.display();
-    image(endscreentext, 0, 0, 1000, 750);
+//    image(endscreentext, 0, 0, 1000, 750);
   }
 }

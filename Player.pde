@@ -3,6 +3,7 @@
  */
 
 class Player {
+  
   float y, speed, L, updown, legSpeed;
   color bodyColor;
 

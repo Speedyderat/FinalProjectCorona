@@ -4,14 +4,7 @@
    
 class NPC {
 
-  float x;
-  float y;
-  float speed;
-  float L;
-  float updown;
-  float legSpeed;
-  float directionX;
-  float directionY;
+  float x, y, speed, L, updown, legSpeed, directionX, directionY;
   color bodyColor;
 
   NPC() {
