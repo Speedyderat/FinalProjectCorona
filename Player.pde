@@ -129,14 +129,6 @@ class Player {
   float posY() {
     return y;
   }
-  
-  float pSlow() {
-    return speed = 1;
-  }
-  
-  float pFast() {
-    return speed = 2;
-  }
 
 
 
