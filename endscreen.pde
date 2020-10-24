@@ -21,4 +21,10 @@ class Endscreen {
     icon.display();
     image(endscreengameover, 0, 0, 1000, 750);
   }
+  
+  void youwon() {
+    image(endscreenbackground, 0, 0, 1000, 750);
+    icon.display();
+    image(endscreengameover, 0, 0, 1000, 750);
+  }
 }
