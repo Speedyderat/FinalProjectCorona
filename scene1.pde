@@ -2,11 +2,11 @@
  Scene 1 is an image created in photoshop.
  */
 
-class scene1 {
+class Scene1 {
   
   PImage scene1;
 
-  scene1() {
+  Scene1() {
     scene1 = loadImage("data/img/scene1.png");
   }
 

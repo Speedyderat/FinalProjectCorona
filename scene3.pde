@@ -2,11 +2,11 @@
  Scene 3 is an image created in photoshop.
  */
  
-class scene3 {
+class Scene3 {
   
   PImage scene3;
 
-  scene3() {
+  Scene3() {
     scene3 = loadImage("data/img/scene3.png");
   }
 

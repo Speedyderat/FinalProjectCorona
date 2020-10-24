@@ -6,7 +6,7 @@ class scene2 {
   
   PImage scene2;
 
-  scene2() {
+  Scene2() {
     scene2 = loadImage("data/img/scene2.png");
   }
 
