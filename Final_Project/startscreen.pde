@@ -1,12 +1,12 @@
 //Startscreen is an image created in photoshop.
 
-class startscreen {
+class Startscreen {
   PImage startscreenbackground;
   PImage startscreentext;
 
   CoronaIcon icon;
 
-  startscreen() {
+  Startscreen() {
     startscreenbackground = loadImage("img/startscreenbackground.png");
     startscreentext = loadImage("img/startscreentext.png");
 

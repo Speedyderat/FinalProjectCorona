@@ -5,8 +5,7 @@
 
 int stage;
 int npccount = 8;
-
-startscreen startscreen;
+Startscreen startscreen;
 scene1 scene1;
 scene2 scene2;
 scene3 scene3;
@@ -18,7 +17,7 @@ NPC [] npcs = new NPC[npccount];
 void setup() {
   size(1000, 750);
 
-  startscreen = new startscreen();
+  startscreen = new Startscreen();
   scene1 = new scene1();
   scene2 = new scene2();
   scene3 = new scene3();
