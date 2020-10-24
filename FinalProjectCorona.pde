@@ -14,7 +14,7 @@ Scene2 scene2;
 Scene3 scene3;
 Player P1;
 Energy E;
-NPC [] npcs1 = new NPC[npccount];
+NPC [] npcs1 = new NPC[npccount];            // every scene has his own array, so the NPC's spawn differently in every scene
 NPC [] npcs2 = new NPC[npccount];
 NPC [] npcs3 = new NPC[npccount];
 
