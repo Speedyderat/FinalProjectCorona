@@ -14,7 +14,9 @@ Scene2 scene2;
 Scene3 scene3;
 Player P1;
 Energy E;
-NPC [] npcs = new NPC[npccount];
+NPC [] npcs1 = new NPC[npccount];
+NPC [] npcs2 = new NPC[npccount];
+NPC [] npcs3 = new NPC[npccount];
 
 
 void setup() {
@@ -28,10 +30,17 @@ void setup() {
   E = new Energy();
 
   for (int i=0; i<npccount; i++) {
-    npcs[i] = new NPC();
-
-    stage = 1;
+    npcs1[i] = new NPC();
   }
+  for (int i=0; i<npccount; i++) {
+    npcs2[i] = new NPC();
+  }
+  for (int i=0; i<npccount; i++) {
+    npcs3[i] = new NPC();
+  }
+
+
+  stage = 1;
 }
 
 
@@ -51,7 +60,7 @@ void draw() {
 
     //NPC
     for (int i=0; i<npccount; i++) {
-      npcs[i].display();
+      npcs1[i].display();
     }
 
     //Player
@@ -72,7 +81,7 @@ void draw() {
 
     //NPC
     for (int i=0; i<npccount; i++) {
-      npcs[i].display();
+      npcs2[i].display();
     }
 
     //Player
@@ -98,7 +107,7 @@ void draw() {
 
     //NPC
     for (int i=0; i<npccount; i++) {
-      npcs[i].display();
+      npcs3[i].display();
     }
 
     //Player

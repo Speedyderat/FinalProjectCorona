@@ -64,8 +64,9 @@ class NPC {
     if (x > width - 20 || x < 20) {
       directionX *= -1;
     }
+
     if (y > height - 60 || y < 180) {
-      directionY *= -1;
+      directionY *= random(1)>0.5?-1:1;
     }
 
     L = L + (legSpeed * updown);
