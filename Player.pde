@@ -1,5 +1,5 @@
 /* 
- This is a class created for the corona virus going around on the starting screen.
+ This is a class that creates the player.
  */
 
 class Player {
@@ -95,7 +95,7 @@ class Player {
       x = x + speed;
     if (keys ['w'] && y > 160)
       y = y - speed;
-    if (keys ['s'] && y <= height)
+    if (keys ['s'] && y <= height - 160)
       y = y + speed;
     if (keys [' ']) {
       speed = 2;

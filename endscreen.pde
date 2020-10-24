@@ -1,5 +1,5 @@
 /* 
- Startscreen is an image created in photoshop.
+ Endscreen is an image created in photoshop.
  */
 
 class Endscreen {

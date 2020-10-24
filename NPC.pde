@@ -1,5 +1,5 @@
 /* 
- This is a class creates NPCs.
+ This is a class that creates NPCs.
  */
 
 class NPC {
