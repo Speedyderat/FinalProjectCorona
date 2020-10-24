@@ -16,8 +16,8 @@ class NPC {
     L = 0;
     updown = 1;
     legSpeed = 0.35;
-    directionX = random( 1, -1);
-    directionY = random( 1, -1);
+    directionX = random(1)>0.5?-1:1;
+    directionY = random(1)>0.5?-1:1;
 
     bodyColor = color(255, 255, 0);
   }
@@ -62,10 +62,10 @@ class NPC {
     x = x + (speed * directionX);
     y = y + (speed * directionY);
     if (x > width - 20 || x < 20) {
-      directionX *= -1;
+      directionX *= random(1)>0.5?-1:1;
     }
     if (y > height - 60 || y < 160) {
-      directionY *= -1;
+      directionY *= random(1)>0.5?-1:1;
     }
 
     L = L + (legSpeed * updown);
