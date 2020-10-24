@@ -166,7 +166,7 @@ void mouseClicked() {
   }
 }
 void mouseReleased() {
-    if (stage == 3) {
-  scene2.posteRelease();
-    }
+  if (stage == 3) {
+    scene2.posteRelease();
+  }
 }
