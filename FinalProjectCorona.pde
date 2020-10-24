@@ -161,12 +161,8 @@ void keyReleased() {
 }
 
 void mouseClicked() {
-  if (stage == 3) {
-    scene2.posterClick(mouseX, mouseY);
-  }
+  scene2.posterClick(mouseX, mouseY);
 }
 void mouseReleased() {
-  if (stage == 3) {
-    scene2.posteRelease();
-  }
+  scene2.posteRelease();
 }

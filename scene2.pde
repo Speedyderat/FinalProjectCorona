@@ -19,15 +19,19 @@ class Scene2 {
   }
 
   void posterClick(int pointerX, int pointerY) {
-    if (pointerX>width/2-30 && pointerX<width/2+40 && pointerY>120 && pointerY<220) {
-      posterclicked = true;
-    } else {
-      posterclicked = false;
+    if (stage == 3) {
+      if (pointerX>width/2-30 && pointerX<width/2+40 && pointerY>120 && pointerY<220) {
+        posterclicked = true;
+      } else {
+        posterclicked = false;
+      }
     }
   }
 
   void posteRelease() {
-    posterclicked = false;
+    if (stage == 3) {
+      posterclicked = false;
+    }
   }
 
   boolean posterClickres() {
