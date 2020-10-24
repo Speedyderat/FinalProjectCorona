@@ -62,15 +62,10 @@ class NPC {
     x = x + (speed * directionX);
     y = y + (speed * directionY);
     if (x > width - 20 || x < 20) {
-      directionX *= random(1)>0.5?-1:1;
+      directionX *= -1;
     }
-<<<<<<< Updated upstream
-    if (y > height - 60 || y < 160) {
-      directionY *= random(1)>0.5?-1:1;
-=======
     if (y > height - 60 || y < 180) {
       directionY *= -1;
->>>>>>> Stashed changes
     }
 
     L = L + (legSpeed * updown);
