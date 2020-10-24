@@ -1,4 +1,6 @@
-//Energy Bar
+/* 
+ This class is for the energybar at the right bottom of the screen.
+ */
 
 class Energy {
 

@@ -1,10 +1,13 @@
-//Final Project - Public Service Announcement
-/*  Made by: 
- Jasper Bosschart (sXXXXXXX)
- Stefan Kooy      (s2614588)  */
+/* 
+ Final Project - Public Service Announcement
+ Made by: 
+ Jasper Bosschart (s2562685)
+ Stefan Kooy      (s2614588)  
+ */
 
 int stage;
 int npccount = 8;
+float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
 scene1 scene1;
 scene2 scene2;

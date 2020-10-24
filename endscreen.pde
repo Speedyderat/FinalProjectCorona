@@ -1,21 +1,23 @@
-//Startscreen is an image created in photoshop.
-
-class startscreen {
-  PImage startscreenbackground;
-  PImage startscreentext;
+/* 
+ Startscreen is an image created in photoshop.
+ */
+ 
+class Endscreen {
+  PImage endscreenbackground;
+  PImage endscreentext;
 
   CoronaIcon icon;
 
-  startscreen() {
-    startscreenbackground = loadImage("img/startscreenbackground.png");
-    startscreentext = loadImage("img/startscreentext.png");
+  Endscreen() {
+    endscreenbackground = loadImage("data/img/startscreenbackground.png");
+    endscreentext = loadImage("data/img/startscreentext.png");
 
     icon = new CoronaIcon();
   }
 
   void infected() {
-    image(startscreenbackground, 0, 0, 1000, 750);
+    image(endscreenbackground, 0, 0, 1000, 750);
     icon.display();
-    image(startscreentext, 0, 0, 1000, 750);
+    image(endscreentext, 0, 0, 1000, 750);
   }
 }

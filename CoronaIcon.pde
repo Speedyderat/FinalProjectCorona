@@ -1,4 +1,6 @@
-
+/* 
+ This is a class created for the corona virus going around on the starting screen.
+ */
 
 class CoronaIcon {
 
@@ -8,7 +10,7 @@ class CoronaIcon {
 
 
   CoronaIcon() {
-    coronaIcon = loadImage("img/corona.png");
+    coronaIcon = loadImage("data/img/corona.png");
     xPos = random(60, 900);
     yPos = random(150, 600);
     xspeed = random(0.5, 3);

@@ -1,10 +1,12 @@
-//Scene 2 is an image created in photoshop.
-
+/* 
+ Scene 3 is an image created in photoshop.
+ */
+ 
 class scene3 {
   PImage scene3;
 
   scene3() {
-    scene3 = loadImage("img/scene3.png");
+    scene3 = loadImage("data/img/scene3.png");
   }
 
   void display() {

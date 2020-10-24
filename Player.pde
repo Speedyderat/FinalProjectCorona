@@ -1,14 +1,9 @@
-//Player
-float x;
+/* 
+ This is a class created for the corona virus going around on the starting screen.
+ */
 
 class Player {
-
-
-  float y;
-  float speed;
-  float L;
-  float updown;
-  float legSpeed;
+  float y, speed, L, updown, legSpeed;
   color bodyColor;
 
   boolean [] keys = new boolean[1000000];    //makes an array for 128 possible keys (the maximum)

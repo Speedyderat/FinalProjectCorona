@@ -1,5 +1,7 @@
-
-
+/* 
+ This is a class creates NPCs.
+ */
+   
 class NPC {
 
   float x;
