@@ -3,7 +3,7 @@
  */
 
 class Player {
-  
+
   float y, speed, L, updown, legSpeed;
   color bodyColor;
 
@@ -18,6 +18,8 @@ class Player {
     L = 0;
     updown = 1;
     legSpeed = 0.5;
+
+    endscreen = new Endscreen();
 
     bodyColor = color(15, 165, 255);
   }
@@ -117,6 +119,15 @@ class Player {
     } else {
       speed = 1;
     }
+  }
+  
+
+  float posX() {
+    return x;
+  }
+
+  float posY() {
+    return y;
   }
 
 

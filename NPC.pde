@@ -1,16 +1,16 @@
 /* 
  This is a class creates NPCs.
  */
-   
+
 class NPC {
 
-  float x, y, speed, L, updown, legSpeed, directionX, directionY;
+  float x, y, speed, L, updown, legSpeed, directionX, directionY, distNPC;
   color bodyColor;
 
   NPC() {
     rectMode(CENTER);
 
-    x = random(50, 950);
+    x = random(width/2, 950);
     y = random(180, 700);
     speed = random(0.75, 1);
     L = 0;
@@ -72,6 +72,12 @@ class NPC {
     L = L + (legSpeed * updown);
     if (L >= 5 || L <= -5) {
       updown *= -1;
+    }
+  }
+
+  void infectedBy() {
+    if (dist(P1.posX(), P1.posY(), x, y) < 150) {
+      stage = gameover;
     }
   }
 }

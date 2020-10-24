@@ -6,9 +6,11 @@
  */
 
 int stage;
-int npccount = 8;
+int npccount = 5;
+int gameover;
 float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
+Endscreen endscreen;
 Scene1 scene1;
 Scene2 scene2;
 Scene3 scene3;
@@ -41,6 +43,7 @@ void setup() {
 
 
   stage = 1;
+  gameover = 13;
 }
 
 
@@ -61,6 +64,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {
       npcs1[i].display();
+      npcs1[i].infectedBy();
     }
 
     //Player
@@ -82,6 +86,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {
       npcs2[i].display();
+      npcs2[i].infectedBy();
     }
 
     //Player
@@ -108,6 +113,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {
       npcs3[i].display();
+      npcs3[i].infectedBy();
     }
 
     //Player
@@ -121,6 +127,11 @@ void draw() {
       stage = stage - 1;
       x = width - 3;
     }
+  }
+  
+  //Third Stage - Endscreen
+  if (stage == gameover) {
+    endscreen.infected();
   }
 }
 
