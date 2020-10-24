@@ -17,8 +17,8 @@ class Scene25 {
     image(poster, width/2-30, 120, 70, 100);
     pushMatrix();
     rectMode(CORNER);
-    fill(0,0,0,191);
-    rect(0,0,1000,750);
+    fill(0, 0, 0, 191);
+    rect(0, 0, 1000, 750);
     rectMode(CENTER);
     popMatrix();
     image(poster, 250, 0, 500, 750);
