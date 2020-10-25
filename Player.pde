@@ -81,7 +81,7 @@ class Player {
     if (keys ['s'] && y < height-70)
       y = y + speed;
     if (keys [' ']) {
-      speed = 2;
+      speed = E.noRunning();
     } else {
       speed = 1;
     }
@@ -98,7 +98,7 @@ class Player {
     if (keys ['s'] && y <= height - 160)
       y = y + speed;
     if (keys [' ']) {
-      speed = 2;
+      speed = E.noRunning();
     } else {
       speed = 1;
     }
@@ -115,7 +115,7 @@ class Player {
     if (keys ['s'] && y <= height - 70)
       y = y + speed;
     if (keys [' ']) {
-      speed = 2;
+      speed = E.noRunning();
     } else {
       speed = 1;
     }

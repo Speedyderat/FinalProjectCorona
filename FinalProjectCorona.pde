@@ -56,7 +56,6 @@ void draw() {
   //First Stage - Startscreen
   if (stage == 1) {
     startscreen.display();
-//    inventory.display();
     if (keyPressed) {
       stage = stage + 1;
     }
@@ -79,6 +78,9 @@ void draw() {
     //Energy
     E.display();
 
+    //Inventory
+    inventory.display();
+
     if (x >= width - 1) {
       stage = stage + 1;
       x = 3;
@@ -100,6 +102,9 @@ void draw() {
 
     //Energy
     E.display();
+
+    //Inventory
+    inventory.display();
 
     if (scene2.posterClickres()) {        //poster displays in full size in stage 25
       stage = stage + 22;
@@ -141,18 +146,24 @@ void draw() {
     //Energy
     E.display();
 
+    //Inventory
+    inventory.display();
+
     if (x <= 1) {
       stage = stage - 1;
       x = width - 3;
     }
   }
 
-  //Third Stage - Endscreen
+  //Final Stage - Endscreen
   if (stage == gameover) {
     endscreen.gameover();
   }
-}
 
+  if (stage == youwon) {
+    endscreen.youwon();
+  }
+}
 
 void keyPressed() {
   P1.walkPressed();

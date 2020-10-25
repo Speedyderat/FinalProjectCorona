@@ -5,7 +5,7 @@
 
 class Energy {
 
-  float energy, drain, charge;
+  float energy, drain, charge, speed, tempRun;
 
   boolean [] keys = new boolean[1000000];    //makes an array for more possible keys at the same time
 
@@ -58,13 +58,23 @@ class Energy {
   }
 
   void drain() {
-    if (keys [' '] && (keys ['a'] || keys ['s'] || keys ['d'] || keys ['w'])) {
+    if (keys [' '] && (keys ['a'] || keys ['s'] || keys ['d'] || keys ['w']) && speed == 2) {
       if (energy >= 0) {
         energy = energy - drain;
       }
     }
   }
 
+  float noRunning() {
+    if (energy <= 0) {
+      speed = 1;
+    } else if (speed == 1 && energy <= 100) {
+      speed = 1;
+    } else {
+      speed = 2;
+    }
+    return speed;
+  }
 
   void walkPressed() {
     keys[key] = true;
