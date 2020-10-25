@@ -20,10 +20,10 @@ class Inventory {
     }
   }
   
-  boolean shopchecker() {
-  if(stage == 3) {
-  if (player.posY
-  }
-  return shopped;
-}
+//  boolean shopchecker() {
+//  if(stage == 3) {
+//  if (player.posY) {
+//  }
+//  return shopped;
+//}
 }

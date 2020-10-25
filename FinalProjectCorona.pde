@@ -7,7 +7,7 @@
 
 int stage, gameover, youwon;
 int npccount = 5;
-//float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
+float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
 Endscreen endscreen;
 Scene1 scene1;
@@ -56,7 +56,7 @@ void draw() {
   //First Stage - Startscreen
   if (stage == 1) {
     startscreen.display();
-    inventory.display();
+//    inventory.display();
     if (keyPressed) {
       stage = stage + 1;
     }
@@ -107,7 +107,7 @@ void draw() {
 
     if (x <= 1) {
       stage = stage - 1;
-      x) = width - 3;
+      x = width - 3;
     }
 
     if (x > width - 1) {
