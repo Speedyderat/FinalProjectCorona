@@ -1,5 +1,5 @@
 /* 
- Scene 2.5 created to show the poster in scene 2.
+ Scene 2.5 is created to show the poster in scene 2.
  */
 
 class Scene25 {

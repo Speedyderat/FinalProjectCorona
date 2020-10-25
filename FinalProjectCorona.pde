@@ -7,7 +7,7 @@
 
 int stage, gameover, youwon;
 int npccount = 5;
-float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
+//float x;                                     // this X is actually the x of the player but is defined here to make the switching from scenes possible
 Startscreen startscreen;
 Endscreen endscreen;
 Scene1 scene1;
@@ -16,6 +16,7 @@ Scene25 scene25;
 Scene3 scene3;
 Player P1;
 Energy E;
+Inventory inventory;
 NPC [] npcs1 = new NPC[npccount];            // every scene has his own array, so the NPC's spawn differently in every scene
 NPC [] npcs2 = new NPC[npccount];
 NPC [] npcs3 = new NPC[npccount];
@@ -29,6 +30,7 @@ void setup() {
   scene2 = new Scene2();
   scene25 = new Scene25();
   scene3 = new Scene3();
+  inventory = new Inventory();
   P1 = new Player();
   E = new Energy();
 
@@ -54,6 +56,7 @@ void draw() {
   //First Stage - Startscreen
   if (stage == 1) {
     startscreen.display();
+    inventory.display();
     if (keyPressed) {
       stage = stage + 1;
     }
@@ -104,7 +107,7 @@ void draw() {
 
     if (x <= 1) {
       stage = stage - 1;
-      x = width - 3;
+      x) = width - 3;
     }
 
     if (x > width - 1) {

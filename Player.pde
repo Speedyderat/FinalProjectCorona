@@ -4,7 +4,7 @@
 
 class Player {
 
-  float y, speed, L, updown, legSpeed;
+  float x, y, speed, L, updown, legSpeed;
   color bodyColor;
 
   boolean [] keys = new boolean[1000000];    //makes an array for more possible keys at the same time
@@ -129,8 +129,6 @@ class Player {
   float posY() {
     return y;
   }
-
-
 
   void walkPressed() {
     keys[key] = true;
