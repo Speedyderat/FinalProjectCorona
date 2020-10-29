@@ -12,12 +12,12 @@ class Energy {
   Energy() {
     energy = 197;
     drain = 1;
-    charge = 0.1;
+    charge = 0.2;
   }
 
   void display() {
-    drain();
-    charge();
+    drain();                  //calls method drain
+    charge();                 //calls method charge
     stroke(0);
     strokeWeight(3);
 

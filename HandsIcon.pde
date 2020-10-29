@@ -1,5 +1,5 @@
 /* 
- This is a class created for the clean hands icon going around on the endscreen (image was free to use).
+ This is a class created for the clean hands icon going around on the endscreen (image is free to use: https://www.iconfinder.com/icons/4443517/wash_handwashing_hygiene_clean_bubble_hand_coronavirus_icon).
  */
 
 class HandsIcon {

@@ -129,6 +129,7 @@ class Player {
   float posY() {
     return y;
   }
+  
 
   void walkPressed() {
     keys[key] = true;

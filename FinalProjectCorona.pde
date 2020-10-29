@@ -44,7 +44,6 @@ void setup() {
     npcs3[i] = new NPC();
   }
 
-
   stage = 1;
   gameover = 13;
   youwon = 100;
@@ -107,7 +106,7 @@ void draw() {
     inventory.display();
 
     if (scene2.posterClickres()) {        //poster displays in full size in stage 25
-      stage = stage + 22;
+      stage = 25;
     }
 
     if (x <= 1) {
@@ -126,7 +125,7 @@ void draw() {
     scene25.display();
 
     if (mousePressed) {
-      stage = stage - 22;
+      stage = 3;
     }
   }
 

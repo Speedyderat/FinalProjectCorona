@@ -1,5 +1,5 @@
 /* 
- This is a class created for the corona virus going around on the starting screen (image was free to use).
+ This is a class created for the corona virus going around on the starting screen (image is free to use: https://pixabay.com/nl/vectors/coronavirus-pictogram-rood-corona-5107804/).
  */
 
 class CoronaIcon {

@@ -14,8 +14,8 @@ class Inventory {
   }
 
   void display() {
-    inventory.housechecker();
-    inventory.shopchecker();
+    housechecker();
+    shopchecker();
     if (shopped) {
       image(bag, 50, 600, 80, 140);
     } else {
