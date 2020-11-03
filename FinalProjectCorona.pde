@@ -64,7 +64,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {
       npcs1[i].display();
-      npcs1[i].infectedBy();
+//      npcs1[i].infectedBy();
     }
 
     //Player
@@ -89,7 +89,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {
       npcs2[i].display();
-      npcs2[i].infectedBy();
+//      npcs2[i].infectedBy();
     }
 
     //Player
@@ -120,7 +120,6 @@ void draw() {
   //Poster scene  
   if (stage == 25) {
     scene25.display();
-
     if (mousePressed) {
       stage = 3;
     }
