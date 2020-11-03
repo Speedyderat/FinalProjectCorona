@@ -20,10 +20,10 @@ class HandsIcon {
   }
 
   void display() {
-    xPos = xPos + ( xspeed * xDirection );
+    xPos = xPos + ( xspeed * xDirection );          //this makes the corona icon move around the screen
     yPos = yPos + ( yspeed * yDirection );
-    rotation = rotation + rotationSpeed;
-    if (xPos > width-50 || xPos < 50) {
+    rotation = rotation + rotationSpeed;            //for extra realism the cornona icon also spins around
+    if (xPos > width-50 || xPos < 50) {             //this makes the corona icon bounce off the wall and make it rotate like it would in real life
       xDirection *= -1;
       rotationSpeed *= -1;
     }
