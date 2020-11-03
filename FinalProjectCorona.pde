@@ -55,9 +55,6 @@ void draw() {
   //First Stage - Startscreen
   if (stage == 1) {
     startscreen.display();
-    if (keyPressed) {
-      stage = stage + 1;
-    }
   } 
 
   //Second Stage - The Game
@@ -167,6 +164,9 @@ void draw() {
 void keyPressed() {
   P1.walkPressed();
   E.walkPressed();
+  if (stage == 1) {
+    stage = stage + 1;
+  }
 }
 
 void keyReleased() {
@@ -176,7 +176,13 @@ void keyReleased() {
 
 void mouseClicked() {
   scene2.posterClick(mouseX, mouseY);
+
+
+  if (stage == gameover || stage == youwon) {
+    link("https://www.rivm.nl/en/novel-coronavirus-covid-19");
+  }
 }
+
 void mouseReleased() {
   scene2.posteRelease();
 }

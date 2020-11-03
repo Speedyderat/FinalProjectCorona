@@ -16,7 +16,7 @@ class NPC {
     L = 0;
     updown = 1;
     legSpeed = 0.35;
-    directionX = random(1)>0.5?-1:1;
+    directionX = random(1)>0.5?-1:1;    //checks remainder to determine the direction
     directionY = random(1)>0.5?-1:1;
 
     bodyColor = color(255, 255, 0);
