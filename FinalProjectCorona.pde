@@ -180,6 +180,7 @@ void mouseClicked() {
 
   if (stage == gameover || stage == youwon) {
     link("https://www.rivm.nl/en/novel-coronavirus-covid-19");
+    exit();
   }
 }
 
