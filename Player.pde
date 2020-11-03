@@ -3,7 +3,7 @@
  */
 
 class Player {
-  
+
   float x, y, speed, L, updown, legSpeed;
   color bodyColor;
 
@@ -68,54 +68,53 @@ class Player {
       L = 0;
   }
 
-  void move1() {
-
-    if (keys ['a'] && x > 15)
-      x = x - speed;
-    if (keys ['d'] && x <= width)
-      x = x + speed;
-    if (keys ['w'] && y > 160)
-      y = y - speed;
-    if (keys ['s'] && y < height-70)
-      y = y + speed;
-    if (keys [' ']) {
-      speed = E.noRunning();
-    } else {
-      speed = 1;
+  void move() {
+    if (stage == 2) {
+      if (keys ['a'] && x > 15)
+        x = x - speed;
+      if (keys ['d'] && x <= width)
+        x = x + speed;
+      if (keys ['w'] && y > 160)
+        y = y - speed;
+      if (keys ['s'] && y < height-70)
+        y = y + speed;
+      if (keys [' ']) {
+        speed = E.noRunning();
+      } else {
+        speed = 1;
+      }
     }
-  }
 
-  void move2() {
-
-    if (keys ['a'] && x >= 0)
-      x = x - speed;
-    if (keys ['d'] && x <= width)
-      x = x + speed;
-    if (keys ['w'] && y > 160)
-      y = y - speed;
-    if (keys ['s'] && y <= height - 160)
-      y = y + speed;
-    if (keys [' ']) {
-      speed = E.noRunning();
-    } else {
-      speed = 1;
+    if (stage == 3) {
+      if (keys ['a'] && x >= 0)
+        x = x - speed;
+      if (keys ['d'] && x <= width)
+        x = x + speed;
+      if (keys ['w'] && y > 160)
+        y = y - speed;
+      if (keys ['s'] && y <= height - 160)
+        y = y + speed;
+      if (keys [' ']) {
+        speed = E.noRunning();
+      } else {
+        speed = 1;
+      }
     }
-  }
 
-  void move3() {
-
-    if (keys ['a'] && x >= 0)
-      x = x - speed;
-    if (keys ['d'] && x <= width - 15)
-      x = x + speed;
-    if (keys ['w'] && y > 180)
-      y = y - speed;
-    if (keys ['s'] && y <= height - 70)
-      y = y + speed;
-    if (keys [' ']) {
-      speed = E.noRunning();
-    } else {
-      speed = 1;
+    if (stage == 4) {
+      if (keys ['a'] && x >= 0)
+        x = x - speed;
+      if (keys ['d'] && x <= width - 15)
+        x = x + speed;
+      if (keys ['w'] && y > 180)
+        y = y - speed;
+      if (keys ['s'] && y <= height - 70)
+        y = y + speed;
+      if (keys [' ']) {
+        speed = E.noRunning();
+      } else {
+        speed = 1;
+      }
     }
   }
 
@@ -129,11 +128,11 @@ class Player {
   }
 
 
-  void walkPressed() {
-      keys[key] = true;
+  void walkPressed(int selectedKey) {
+    keys[selectedKey] = true;
   }
 
-  void walkReleased() {
-    keys[key] = false;
+  void walkReleased(int selectedKey) {
+    keys[selectedKey] = false;
   }
 }

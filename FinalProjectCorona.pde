@@ -69,7 +69,7 @@ void draw() {
 
     //Player
     P1.display();
-    P1.move1();
+    P1.move();
 
     //Energy
     E.display();
@@ -94,7 +94,7 @@ void draw() {
 
     //Player
     P1.display();
-    P1.move2();
+    P1.move();
 
     //Energy
     E.display();
@@ -137,7 +137,7 @@ void draw() {
 
     //Player
     P1.display();
-    P1.move3();
+    P1.move();
 
     //Energy
     E.display();
@@ -162,16 +162,16 @@ void draw() {
 }
 
 void keyPressed() {
-  P1.walkPressed();
-  E.walkPressed();
+  P1.walkPressed(key);
+  E.walkPressed(key);
   if (stage == 1) {
     stage = stage + 1;
   }
 }
 
 void keyReleased() {
-  P1.walkReleased();
-  E.walkReleased();
+  P1.walkReleased(key);
+  E.walkReleased(key);
 }
 
 void mouseClicked() {

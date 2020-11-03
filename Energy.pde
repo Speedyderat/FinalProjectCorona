@@ -74,11 +74,11 @@ class Energy {
     return speed;
   }
 
-  void walkPressed() {
-    keys[key] = true;
+  void walkPressed(int selectedKey) {
+      keys[selectedKey] = true;
   }
 
-  void walkReleased() {
-    keys[key] = false;
+  void walkReleased(int selectedKey) {
+    keys[selectedKey] = false;
   }
 }
