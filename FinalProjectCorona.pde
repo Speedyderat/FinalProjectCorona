@@ -19,7 +19,7 @@ Inventory inventory;
 NPC [] npcs1 = new NPC[npccount];            // every scene has his own array, so the NPC's spawn differently in every scene
 NPC [] npcs2 = new NPC[npccount];
 NPC [] npcs3 = new NPC[npccount];
-boolean [] keys = new boolean[65536];    //makes an array for more possible keys at the same time
+boolean [] keys = new boolean[65536];        //makes an array for more possible keys at the same time
 
 
 void setup() {
