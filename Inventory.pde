@@ -1,5 +1,5 @@
 /* 
- This inventory is created to store the grocerybag.
+ This inventory is created to store the grocerybag. (the bag has been made by ourselfs in photoshop.)
  */
 
 class Inventory {
@@ -14,9 +14,9 @@ class Inventory {
   }
 
   void display() {
-    housechecker();
-    shopchecker();
-    if (shopped) {
+    housechecker();                          //checks if you are on the home doormat
+    shopchecker();                           //checks if you are on the shop doormat
+    if (shopped) {                           //if you visited the shop shopped will be true and an shopping bag image will be shown in the corner
       image(bag, 50, 600, 80, 140);
     } else {
       image(bagEmpty, 50, 600, 80, 140);
