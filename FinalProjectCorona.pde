@@ -64,7 +64,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {      //draws new NPCs until npccount is reached
       npcs1[i].display();
-//      npcs1[i].infectedBy();
+      npcs1[i].infectedBy();
     }
 
     //Player
@@ -89,7 +89,7 @@ void draw() {
     //NPC
     for (int i=0; i<npccount; i++) {      //draws new NPCs until npccount is reached
       npcs2[i].display();
-//      npcs2[i].infectedBy();
+      npcs2[i].infectedBy();
     }
 
     //Player
