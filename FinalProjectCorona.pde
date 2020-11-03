@@ -62,7 +62,7 @@ void draw() {
     scene1.display();
 
     //NPC
-    for (int i=0; i<npccount; i++) {
+    for (int i=0; i<npccount; i++) {      //draws new NPCs until npccount is reached
       npcs1[i].display();
 //      npcs1[i].infectedBy();
     }
@@ -77,7 +77,7 @@ void draw() {
     //Inventory
     inventory.display();
 
-    if (P1.x >= width - 1) {
+    if (P1.x >= width - 1) {              //player switches between stages
       stage = stage + 1;
       P1.x = 3;
     }
@@ -87,7 +87,7 @@ void draw() {
     scene2.display();
 
     //NPC
-    for (int i=0; i<npccount; i++) {
+    for (int i=0; i<npccount; i++) {      //draws new NPCs until npccount is reached
       npcs2[i].display();
 //      npcs2[i].infectedBy();
     }
@@ -106,12 +106,12 @@ void draw() {
       stage = 25;
     }
 
-    if (P1.x <= 1) {
+    if (P1.x <= 1) {                      //player switches between stages
       stage = stage - 1;
       P1.x = width - 3;
     }
 
-    if (P1.x > width - 1) {
+    if (P1.x > width - 1) {               //player switches between stages
       stage = stage + 1;
       P1.x = 3;
     }
@@ -120,7 +120,8 @@ void draw() {
   //Poster scene  
   if (stage == 25) {
     scene25.display();
-    if (mousePressed) {
+
+    if (mousePressed) {                  //we wanted to put this if statement into a void mousePressed() but for some reason it didn't work :(
       stage = 3;
     }
   }
@@ -129,7 +130,7 @@ void draw() {
     scene3.display();
 
     //NPC
-    for (int i=0; i<npccount; i++) {
+    for (int i=0; i<npccount; i++) {     //draws new NPCs until npccount is reached
       npcs3[i].display();
       npcs3[i].infectedBy();
     }
@@ -144,7 +145,7 @@ void draw() {
     //Inventory
     inventory.display();
 
-    if (P1.x <= 1) {
+    if (P1.x <= 1) {              //player switches between stages
       stage = stage - 1;
       P1.x = width - 3;
     }
@@ -163,6 +164,7 @@ void draw() {
 void keyPressed() {
   P1.walkPressed(key);
   E.walkPressed(key);
+  
   if (stage == 1) {
     stage = stage + 1;
   }
@@ -175,7 +177,6 @@ void keyReleased() {
 
 void mouseClicked() {
   scene2.posterClick(mouseX, mouseY);
-
 
   if (stage == gameover || stage == youwon) {
     link("https://www.rivm.nl/en/novel-coronavirus-covid-19");
