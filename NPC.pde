@@ -70,13 +70,13 @@ class NPC {
     }
 
     L = L + (legSpeed * updown);
-    if (L >= 5 || L <= -5) {
+    if (L >= 5 || L <= -5) {              //when L reaches the maximum (5) or the minimum (-5) it changes form going up to down or down to up
       updown *= -1;
     }
   }
 
   void infectedBy() {
-    if (dist(P1.posX(), P1.posY(), x, y) < 150) {
+    if (dist(P1.posX(), P1.posY(), x, y) < 150) {        //when Player and NPC are to close to each other you lose the game
       stage = gameover;
     }
   }

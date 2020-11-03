@@ -8,7 +8,7 @@ class Energy {
   float energy, drain, charge, speed, tempRun;
 
   Energy() {
-    energy = 197;
+    energy = 197;            //197 is the maximum energy (bar is filled up)
     drain = 1;
     charge = 0.2;
   }
@@ -57,7 +57,7 @@ class Energy {
 
   void drain() {
     if (keys [' '] && (keys ['a'] || keys ['s'] || keys ['d'] || keys ['w']) && speed == 2) {
-      if (energy >= 0) {
+      if (energy >= 0) {                                                                                //drains the energybar when W, A, S or D is pressed
         energy = energy - drain;
       }
     }

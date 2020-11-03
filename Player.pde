@@ -61,7 +61,7 @@ class Player {
 
     if (keys ['a'] || keys ['s'] || keys ['d'] || keys ['w']) {
       L = L + (legSpeed * updown);
-      if (L == 5 || L == -5) {
+      if (L == 5 || L == -5) {                                          //when L reaches the maximum (5) or the minimum (-5) it changes form going up to down or down to up
         updown *= -1;
       }
     } else
@@ -69,7 +69,7 @@ class Player {
   }
 
   void move() {
-    if (stage == 2) {
+    if (stage == 2) {                                //movement scene 1 (stage 2)
       if (keys ['a'] && x > 15)
         x = x - speed;
       if (keys ['d'] && x <= width)
@@ -85,7 +85,7 @@ class Player {
       }
     }
 
-    if (stage == 3) {
+    if (stage == 3) {                                //movement scene 2 (stage 3)
       if (keys ['a'] && x >= 0)
         x = x - speed;
       if (keys ['d'] && x <= width)
@@ -101,7 +101,7 @@ class Player {
       }
     }
 
-    if (stage == 4) {
+    if (stage == 4) {                                //movement scene 3 (stage 4)
       if (keys ['a'] && x >= 0)
         x = x - speed;
       if (keys ['d'] && x <= width - 15)
