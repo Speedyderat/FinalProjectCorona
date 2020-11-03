@@ -7,8 +7,6 @@ class Player {
   float x, y, speed, L, updown, legSpeed;
   color bodyColor;
 
-  boolean [] keys = new boolean[65536];    //makes an array for more possible keys at the same time
-
   Player() {
     rectMode(CENTER);
 
