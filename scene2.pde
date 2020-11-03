@@ -18,7 +18,7 @@ class Scene2 {
     image(poster, width/2-30, 120, 70, 100);
   }
 
-  void posterClick(int pointerX, int pointerY) {
+  void posterClick(int pointerX, int pointerY) {                                            //if the mouse is clicked on the poster then posterclicked will be true and the scene will switch from 2 to 2.5
     if (stage == 3) {
       if (pointerX>width/2-30 && pointerX<width/2+40 && pointerY>120 && pointerY<220) {
         posterclicked = true;
