@@ -7,7 +7,7 @@ class Energy {
 
   float energy, drain, charge, speed, tempRun;
 
-  boolean [] keys = new boolean[1000000];    //makes an array for more possible keys at the same time
+  boolean [] keys = new boolean[65536];    //makes an array for more possible keys at the same time
 
   Energy() {
     energy = 197;
